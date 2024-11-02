@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #9fbfae;
+}
+
+header {
+    background-color: #9fbfae;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    background-color: #e7e8d2; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    color: #333; 
+}
+
+/* Fondo de las columnas laterales */
+.lateral-bg {
+    background-color: #9fbfae;
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+}
+
+/* Estilos para el contenido central */
+.contenido-central {
+    padding: 30px;
+    background-color: #e7e8d2;
+}
+
+/* Espaciado en dispositivos pequeños */
+@media (max-width: 768px) {
+    .contenido-central {
+        padding: 15px;
+    }
+}
+
+.estudio {
+    background-color: #f8f9fa; /* Color de fondo para el apartado de estudios */
+    border: 1px solid #ddd; /* Borde para diferenciar cada estudio */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior entre estudios */
+    text-align: center; /* Centrar texto */
+}
+
+main {
+    padding: 20px;
+    margin-top: 80px;
+    background-color: #9fbfae;
+}
+
+h2 {
+    color: #333;
+}
+
+.proyecto {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #9fbfae;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+main section {
+    display: none;
+}
+
+/* Mostrar sección activa */
+main section.active {
+    display: block;
+}
+
+.tiempo{
+    font-size: 15px;
+    color: #6b6a6a;
+}
