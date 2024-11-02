@@ -52,12 +52,18 @@ nav ul li a:hover {
 }
 
 /* Estilos para el contenido central */
-.contenido-central {
+.contenido-central{
     padding: 30px;
     background-color: #e7e8d2;
     text-align: center; /* Centra el contenido */
 }
 
+.contenido-central-contacto{
+    padding: 30px;
+    height: 530px;
+    background-color: #e7e8d2;
+    text-align: center; /* Centra el contenido */
+}
 .social-icons {
     display: flex;
     justify-content: center;
@@ -208,4 +214,25 @@ main section.active {
 .tiempo{
     font-size: 15px;
     color: #6b6a6a;
+}
+
+section .imagenesDinamicas{
+    display: flex;
+    width: 650px;
+    height: 530px;
+}
+
+section .imagenesDinamicas img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section .imagenesDinamicas img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
