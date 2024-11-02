@@ -48,14 +48,110 @@ nav ul li a:hover {
 /* Fondo de las columnas laterales */
 .lateral-bg {
     background-color: #9fbfae;
-    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+    min-height: 100vh;
 }
 
 /* Estilos para el contenido central */
 .contenido-central {
     padding: 30px;
     background-color: #e7e8d2;
+    text-align: center; /* Centra el contenido */
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* LinkedIn Styles */
+.linkedin-container {
+    background-color: #0077b5;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.linkedin-logo {
+    background-color: #005582;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+.linkedin-username {
+    font-weight: bold;
+    color: white;
+}
+/* GitHub Styles */
+.github-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #333; /* Color del texto */
+    transition: opacity 0.3s; /* Suaviza el cambio de opacidad en todo el enlace */
+}
+
+/* Eliminar el subrayado y el contorno en los estados hover y focus */
+.github-link:hover,
+.github-link:focus {
+    opacity: 0.7; /* Cambia la opacidad del enlace completo al pasar el mouse */
+    outline: none; /* Elimina el contorno al enfocar */
+    text-decoration: none; /* Asegúrate de que no haya subrayado */
+}
+
+/* Asegurando que el subrayado no aparezca en ningún caso */
+.github-link:active {
+    outline: none; /* Asegúrate de que no haya contorno al hacer clic */
+    text-decoration: none; /* Asegúrate de que no haya subrayado */
+}
+
+.github-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    transition: opacity 0.3s; /* Suaviza el cambio de opacidad para el icono */
+}
+
+.github-follow-btn {
+    background-color: #ffffff;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    color: #24292e;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: opacity 0.3s; /* Añadir transición para suavizar el cambio de opacidad */
+}
+
+.github-follow-btn:hover {
+    opacity: 0.7; /* Cambiar la opacidad al pasar el mouse por encima */
+    text-decoration: none; /* Asegúrate de que no haya subrayado en el botón */
+}
+
+.github-followers-count {
+    font-weight: bold;
+    transition: opacity 0.3s; /* Suaviza el cambio de opacidad para el conteo de seguidores */
+}
+
+
+
+
 
 /* Espaciado en dispositivos pequeños */
 @media (max-width: 768px) {
