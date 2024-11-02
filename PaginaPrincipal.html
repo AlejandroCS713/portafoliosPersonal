@@ -6,168 +6,78 @@
     <title>Página Principal - Tienda de Ropa</title>
     <link rel="stylesheet" href="PaginaPrincipal.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header id="navbar" class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-2 col-md-2 text-center">
-                <img src="https://media.giphy.com/media/mXX9srd5Q0mXPjdvIe/giphy.gif" width="100">
-
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="row w-100 align-items-center"> <!-- Asegúrate de que la fila esté alineada verticalmente -->
+                    <div class="col-md-3 d-flex align-items-center"> <!-- Flex para centrar verticalmente -->
+                        <img class="iconoPersonalizado" src="recursos/IconoA.png" alt="Descripción del icono"> <!-- Ajusta el tamaño según sea necesario -->
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center"> <!-- Flex para centrar horizontalmente -->
+                        <ul class="navbar-nav d-flex align-items-center"> <!-- Asegúrate de que la lista esté alineada verticalmente -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experiencia">Experiencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#proyectos">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tecnologias">Tecnologías</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 d-flex align-items-center justify-content-end"> <!-- Flex para centrar verticalmente y alinear a la derecha -->
+                        <a href="https://github.com/AlejandroCS713" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github icon-custom"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alejandro-carbonell-soriano-a83aa1333" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin icon-custom"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            
-            <div class="col-8 col-md-8">
-                <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50">
-                <nav class="d-flex justify-content-center">
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link text-white" data-target="sobre-mi">Sobre Mí</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" data-target="proyectos">Proyectos</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" data-target="contacto">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <div class="col-2 col-md-2 text-center">
-            
-                <img src="https://media.giphy.com/media/QWDpDIZFAvTljpyOL1/giphy.gif" width="100">
-
-                
-            </div>
-        </div>
+        </nav>
     </header>
-    <br>
-    <main>
-        <br>
-        <section id="sobre-mi" class="container-fluid">
-            <div class="row">
-                <!-- Columna izquierda con fondo -->
-                <div class="col-12 col-md-1 lateral-bg"></div>
-                
-                <!-- Columna central para el contenido -->
-                <div class="col-12 col-md-10 contenido-central">
-                    <h2>Sobre Mí</h2>
-                    <p>Breve descripción sobre ti, tus habilidades y tu experiencia.</p>
-        
-                    <h2>Estudios</h2>
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <div class="estudio">
-                                <a href="https://www.iescierva.net/"><img width="68" src="https://media.licdn.com/dms/image/v2/C4D0BAQGAvakvHvijhQ/company-logo_100_100/company-logo_100_100/0/1630458393293?e=1738800000&v=beta&t=t5IIrgWes5bGUYFmjqtyiIvM6HZmH7lAuTLnDKKLNqQ" alt="Logo de institución"> </a>
-                                <h3>IES Ingeniero de la Cierva</h3>
-                                <p>Desarrollador de Aplicaciones Web</p>
-                                <p class="tiempo">sept. 2024 - actualmente</p>
-                                <p><b>Aptitudes: </b> HTML Y CSS · JavaScript · PHP · HP Blade · Laravel · Herd</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="estudio">
-                            <a href="https://www.iax.es/"> <img width="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEVHcEwAU5AAYpgAaZwhgqtBjbJOk7YAZJkQc6KcwdTt9Pj////Y6O/K3uh+rsddm7sAdKKwzd0df6kAZ5sAbp8Abp/itsHKAAAAFnRSTlMAElKn0vv/kyv////////////////hoIgAQwAAAZVJREFUeAFkU4my7SAIs4v2YqyicP7/V9+BDn1bZrMZTADT9Bvbfpy5lHxe+5b+x8+RqcJRKR//lRylATf1MTrdQCuX04GNJ2pfog5ZvWJ+tj/kVwWJ8gsVQl0/7/1VUYT/gmTUFRpcsZT/gnZr9pMcx0Qxd9YA84JhXt7AQCOad9dxT/rinsoFjmEmR3tmH5rJj9SVuTrZjm+HGUZXG0Jd2frxHtCRt7QTnC5qvVst+ckkGLSno95OT32b99MAIHe90gkSp9nwilkXTQhnyhiP9XDlO8Sk+c2cCooGHR7yFGQtKKlgqBtCQgHZ5qhNvSCjK0tYL1gF+YlUzeK0T6XHQ3vLPod5sdGnj8lajDbjrhXwtpqwj2mLYtb2zIElj5igq9nstuoeHtKb8PI5CpbZ5M0ey8fCF+bwrDtPc/DHStsAyUMPxCqodotd8UxdE0Wdtn4jLKrFA2P4WOSc7u+6b1kRuQjtBLA4HnKUCO0b+2zX2CBAjdiHxmeiAkPU4GLx4wSu8Ws4sh7CENyZF5H92bFkfwAqdCp++EGE8wAAAABJRU5ErkJggg==" alt="Logo de institución"> </a>
-                                <h3>IES Alfonso X el Sabio</h3>
-                                <p>Desarrollador de Aplicaciones Multiplataforma</p>
-                                <p class="tiempo">sept. 2022 - jun. 2023</p>
-                                <p><b>Aptitudes: </b>  Java · Sistema de gestión de bases de datos (SGBD) · Desarrollo de Android · Oracle SQL Developer · Spring Boot · Python</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="estudio">
-                            <a href="https://www.nunsys.com/"> <img width="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAMFBMVEVHcEz/AJn/AJn/AJn/AJn/AJn/AJn/AJn/AJn/AJn/AJn/AJn/AJn/AJn/AJn/AJmlOLiGAAAAD3RSTlMAClDKHDHddO89u2OohpTmXl8MAAABCElEQVQ4jY2T2RKDIAxFZZdF8/9/WwhZoLad5sHBcCQ3l3gc/4b35seuadDjbPnb/gkU0XLqWoELNGKYuRKXkrF5kx0j81sDUYGEz8yFHH57Q5EGEi0KHzLKeIBKeQcsLTFhET9nNveEJ8IyUZFOcrAIykyksZxH4PvNRBDCkJisVXfiopbZJf+oMjru740tFFusAhGbpBBftFtUKYAKlVPfAEhCcHLVsLXCA9D6ulJHH5ut81Ig1AeRtHc3wCehN2BR/3pNIoPWEUmxmLvNfN3DW5yQfaK6fBlynq6yC1Fbus6we+ysMTccC0FX5Rdf0SWJS4YuCuCPzxEaqi3f9tGDEH79ylu8ACBvGEyFgLSWAAAAAElFTkSuQmCC" alt="Logo de institución"> </a>
-                                <h3>BootCamp Nunsys</h3>
-                                <p>Full Stack Web Developer</p>
-                                <p class="tiempo">may. 2023 - jun. 2023</p>
-                                <p><b>Aptitudes: </b> Metodologías ágiles · Git · Principios SOLID · Testing · Patrones de diseño · HTML · Hojas de estilos en cascada (CSS) · SASS · Bootstrap · Angular · Karma · Cucumber · Java Spring · TypeScript · Docker · Seguridad </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="estudio">
-                               <a href="https://www.iesinfantaelena.es/"><img width="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAMAAADhRa4NAAAAOVBMVEVHcEzVAG3VAG57bHPWAG7WAG65LG/WAG3WAG7WAG7WAG7WAG3VAG5zc3Nzc3Nzc3Nyc3Nzc3Nyc3NBdPMNAAAAE3RSTlMATXYglv8N+bTzWjRq3P9v05ZSTI8+UwAAAH1JREFUeAHFz4UBwzAMBMA3Owz7D9tXuQ3zmdkClCaDLi3YWkcKXU78bPDevxsKnA8/G6JzsuRcMrnh54nUUgbKrQVZqyGswBxF+VaAqvLD/G2oJzZM3dA0FahtmqJ/g8FLvXqDySkb2aAc2Ws3ZJHyLWGK7lRbPXmI7tTlbn1WEyeh4RJaAAAAAElFTkSuQmCC" alt="Logo de institución"> </a>
-                                <h3>IES Infanta Elena </h3>
-                                <p>Sistemas Microinformaticos y Redes</p>
-                                <p class="tiempo">may. 2021 - jun. 2022</p>
-                                <p><b>Aptitudes: </b>Administración de sistemas Linux · Administración de servidores · Windows Server · Interfaz de línea de comandos (CLI) · Montaje de hardware informático · Gestión de redes</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <h2>Experiencia</h2>
-                    <p>Información sobre tu experiencia laboral.</p>
-                </div>
-                
-                <!-- Columna derecha con fondo -->
-                <div class="col-12 col-md-1 lateral-bg"></div>
-            </div>
-        </section>
-        
-        
-
-        <section id="proyectos" class="container-fluid">
-            <div class="row">
-                <!-- Columna izquierda con fondo -->
-                <div class="col-12 col-md-1 lateral-bg"></div>
-                
-                <!-- Columna central para el contenido -->
-                <div class="col-12 col-md-10 contenido-central">
-                    <div class="proyecto">
-                        <h3>Proyecto 1</h3>
-                        <p>Descripción breve del proyecto 1.</p>
-                        <a href="#">Ver Proyecto</a>
-                    </div>
-                    <div class="proyecto">
-                        <h3>Proyecto 2</h3>
-                        <p>Descripción breve del proyecto 2.</p>
-                        <a href="#">Ver Proyecto</a>
-                    </div>
-                    <div class="proyecto">
-                        <h3>Proyecto 3</h3>
-                        <p>Descripción breve del proyecto 3.</p>
-                        <a href="#">Ver Proyecto</a>
-                    </div>
-                </div>
-                
-                <!-- Columna derecha con fondo -->
-                <div class="col-12 col-md-1 lateral-bg"></div>
-            </div>
-        </section>
-
-
-        <section id="contacto" class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-1 lateral-bg"></div>
-                <!-- Columna central para el contenido -->
-                <div class="col-12 col-md-4 contenido-central-contacto">
-                    <h2 class="tituloContacto">Contacto</h2>
-                    <p>Email: alejandro2003carbonell.com</p>
     
-                    <!-- Iconos de redes sociales -->
-                    <div class="social-icons">
-                        <!-- LinkedIn -->
-                        <div class="linkedin-container">
-                            <a href="https://www.linkedin.com/in/alejandro-carbonell-soriano-a83aa1333" target="_blank" aria-label="LinkedIn" class="linkedin-link">
-                                <span class="linkedin-logo">in</span>
-                                <span class="linkedin-username">AlejandroCS713</span>
-                            </a>
-                        </div>
     
-                        <!-- GitHub -->
-                        <div class="github-container">
-                            <a href="https://github.com/AlejandroCS713" target="_blank" aria-label="GitHub" class="github-link">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAY1BMVEX///8AAAD5+fnk5OSRkZFQUFBxcXHZ2dksLCzExMTu7u7f39/29vZ8fHzo6OjLy8u8vLyzs7NBQUGYmJhKSkpjY2MYGBjT09M5OTmsrKyEhISmpqZcXFwTExOKiopVVVUkJCSS2/+7AAACIElEQVRIiZ2W54KDIAyACVitq+7Rdd77P+UpMiIyes2vpuSDLIKEOISyZJoSRl3rVqmiCyi5RNVn1BTDSeIpiNXXM7bJtfaf5sA46jm1dGOblA6MjX4OYGQ2Lg1hm6RnrvmEA2i+5E5k9SkHcGiH7HMOIEPgLHfL763d+tIwmb1Zc53467opua3leB1+hdadHH3set5C/2jShLEkbR49tLnRH9LZQf5xl1sdLpNS7tJuEAcoj05FcpVsd0HHdPeD6kSIN7XQOXB1MTFiBChW9Ymy5weR4XNVe61aWhgLugb9mjNULT+HswEUd2kWAlFnVijEV4gj5IWC1KkKFGMTXZASbZKEwQS5N6vftzB4U8YzGb8DR1TVf4FA3t/F+CZ6dvuHPJdaGV+JfpeiMBgp4wtqozkM6oEUo03C2UEtFyG34ScE/mjbGmeYX0+PoCu/eafrsUbsFfS+v1f1gfbx3sgBGW6DNEE6tM4EsRnb8WbhLdBHYsPSirLjY81H/p7XdcBlIoa2qzI0kWlWdeaDIpqMX5CB4iieGuzgJKNYStXxcqXHbvYnUE3DBYS3cnId+r02uUUticoyNToP8+5mgqhPUnnk+rJ0T+PbrTC4w9jeu9BeRHrkjI7mCR2t5BEczGWRoOpGCc3d4GJyx1akLvB03iZRGHRMF/3+FHbQ+alMYx8Y+77P88UFLrmLkWi5328k6yUoQxiXyZg9he2j+g9XjBQ+RkOnvAAAAABJRU5ErkJggg==" alt="GitHub Icon" class="github-icon">
-                                <button class="github-follow-btn">Follow</button>
-                                <span class="github-followers-count" id="github-followers">0</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-7">
-                    <section class="imagenesDinamicas">
-                        <img src="https://img.freepik.com/free-photo/computer-program-coding-screen_53876-138060.jpg?t=st=1730548857~exp=1730552457~hmac=fddbca7fda05eedc6878c153c9fa62d92a634240ee5666bb341733d5cd71a1fb&w=740" alt="Código de programación">
-                        <img src="https://cdn.pixabay.com/photo/2024/10/14/16/51/trees-9120346_1280.jpg" alt="Árboles">
-                    </section>
-                </div>
-            </div>
+
+    <!-- Sección de fondo 1 -->
+    <div class="fondo1">
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Este es el apartado donde hablo un poco sobre mí.</p>
         </section>
-        
-        
-    </main>
+    </div>
+
+    <!-- Sección de fondo 2 -->
+    <div class="fondo3">
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <p>Aquí comparto mi experiencia profesional y académica.</p>
+            
+        </section>
+    </div>
+
+    <!-- Sección de fondo 3 -->
+    <div class="fondo2">
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>Estos son algunos de mis proyectos destacados.</p>
+        </section>
+    </div>
+
+    <div class="fondo3">
+        <section id="tecnologias">
+            <h2>Tecnologías</h2>
+            <p>Aquí hablo de las tecnologías que domino.</p>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Alejandro Carbonell Soriano. Todos los derechos reservados.</p>
