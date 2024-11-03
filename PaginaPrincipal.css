@@ -72,12 +72,16 @@ header {
 }
 
 .navbar a {
-    color: #7fe679ff; /* Color del enlace */
+    color: rgb(255, 255, 255); /* Color del enlace */
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px; /* Espaciado interno para los enlaces */
     border-radius: 5px; /* Esquinas redondeadas */
     transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para hover */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-style: normal;
 }
 
 .navbar .nav-link:hover {
@@ -145,3 +149,24 @@ footer {
     background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
     color: white;
 }
+
+
+/*------------------------------------------------Fuentes-----------------------------------------------*/
+.tituloSobreMi{
+    padding-top: 30px;
+    padding-left: 25px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: bold;
+    color:#0c191f ;
+}
+
+.presentacion{
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #efb245;
+}
+/*------------------------------------------------Fuentes-----------------------------------------------*/

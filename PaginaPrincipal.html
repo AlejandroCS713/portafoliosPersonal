@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,24 @@
     <link rel="stylesheet" href="PaginaPrincipal.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Oswald:wght@200..700&family=Tiny5&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <div class="row w-100 align-items-center"> <!-- Asegúrate de que la fila esté alineada verticalmente -->
                     <div class="col-md-3 d-flex align-items-center"> <!-- Flex para centrar verticalmente -->
-                        <img class="iconoPersonalizado" src="recursos/IconoA.png" alt="Descripción del icono"> <!-- Ajusta el tamaño según sea necesario -->
+                        <img class="iconoPersonalizado" src="recursos/IconoA.png" alt="Descripción del icono">
+                        <!-- Ajusta el tamaño según sea necesario -->
                     </div>
                     <div class="col-md-6 d-flex justify-content-center"> <!-- Flex para centrar horizontalmente -->
-                        <ul class="navbar-nav d-flex align-items-center"> <!-- Asegúrate de que la lista esté alineada verticalmente -->
+                        <ul class="navbar-nav d-flex align-items-center">
+                            <!-- Asegúrate de que la lista esté alineada verticalmente -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
                             </li>
@@ -32,11 +40,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-end"> <!-- Flex para centrar verticalmente y alinear a la derecha -->
+                    <div class="col-md-3 d-flex align-items-center justify-content-end">
+                        <!-- Flex para centrar verticalmente y alinear a la derecha -->
                         <a href="https://github.com/AlejandroCS713" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github icon-custom"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/alejandro-carbonell-soriano-a83aa1333" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/alejandro-carbonell-soriano-a83aa1333" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="fa-brands fa-linkedin icon-custom"></i>
                         </a>
                     </div>
@@ -44,14 +54,27 @@
             </div>
         </nav>
     </header>
-    
-    
+
+
 
     <!-- Sección de fondo 1 -->
     <div class="fondo1">
         <section id="sobre-mi">
-            <h2>Sobre Mí</h2>
-            <p>Este es el apartado donde hablo un poco sobre mí.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="tituloSobreMi">Sobre Mí</h2>
+                        <h4 class="presentacion">Full Stack Web Developer and Cross-platform Application Development</h4>
+                        <p>Este es el apartado donde hablo un poco sobre mí.</p>
+                    </div>
+                    <div class="col-md-5">
+
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -60,7 +83,7 @@
         <section id="experiencia">
             <h2>Experiencia</h2>
             <p>Aquí comparto mi experiencia profesional y académica.</p>
-            
+
         </section>
     </div>
 
@@ -85,4 +108,5 @@
 
     <script src="PaginaPrincipal.js"></script>
 </body>
+
 </html>
