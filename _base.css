@@ -1,0 +1,28 @@
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(45deg, #2196F3 0%, rgb(1.0769230769, 11.5769230769, 19.9230769231) 100%);
+  background-size: 200% 200%;
+  height: 100%;
+  background-attachment: fixed;
+  width: 100%;
+  animation: background 6s ease infinite;
+}
+
+@keyframes background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*# sourceMappingURL=_base.css.map */

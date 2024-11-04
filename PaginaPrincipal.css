@@ -6,36 +6,33 @@
     scroll-behavior: smooth; /* Suaviza el desplazamiento */
 }
 
-html, body {
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
 
-/* Sección de fondo 1 */
+
+/* Sección de fondo 1 
 .fondo1 {
     padding-top: 50px;
-    background-image: url('recursos/fondo1.png'); /* Fondo 1 */
-    background-size: cover; /* La imagen cubrirá toda la sección */
-    background-repeat: no-repeat; /* No se repite la imagen */
-    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-image: url('recursos/fondo1.png'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
 }
 
-/* Sección de fondo 2 */
+
 .fondo2 {
-    background-image: url('recursos/fondo2.png'); /* Fondo 2 */
-    background-size: cover; /* La imagen cubrirá toda la sección */
-    background-repeat: no-repeat; /* No se repite la imagen */
-    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-image: url('recursos/fondo2.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    min-height: 100vh; 
 }
 
-/* Sección de fondo 3 */
+
 .fondo3 {
-    background-image: url('recursos/fondo3.png'); /* Fondo 3 */
-    background-size: cover; /* La imagen cubrirá toda la sección */
-    background-repeat: no-repeat; /* No se repite la imagen */
-    min-height: 200vh; /* Ocupa toda la altura de la ventana */
+    background-image: url('recursos/fondo3.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200vh;
 }
-
+*/
 /*---------------------------------------------- Navegador----------------------------------------------------*/
 
 /* Estilos del navegador */
