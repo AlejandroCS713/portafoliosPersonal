@@ -7,86 +7,6 @@
 }
 
 
-
-/* Sección de fondo 1 
-.fondo1 {
-    padding-top: 50px;
-    background-image: url('recursos/fondo1.png'); 
-    background-size: cover;
-    background-repeat: no-repeat; 
-    min-height: 100vh; 
-}
-
-
-.fondo2 {
-    background-image: url('recursos/fondo2.png'); 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    min-height: 100vh; 
-}
-
-
-.fondo3 {
-    background-image: url('recursos/fondo3.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 200vh;
-}
-*/
-/*---------------------------------------------- Navegador----------------------------------------------------*/
-
-/* Estilos del navegador */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; /* Navegador ocupa todo el ancho */
-    background-color: rgba(26, 126, 71, 0.2); /* Fondo semitransparente */
-    border-bottom: 1px solid #051107; /* Borde inferior */
-    backdrop-filter: blur(10px); /* Efecto de desenfoque detrás del navegador */
-    -webkit-backdrop-filter: blur(10px); /* Soporte para navegadores WebKit */
-    z-index: 1000;
-    padding: 10px 0; /* Espaciado interno */
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between; /* Alinea los elementos a los lados */
-    align-items: center; /* Alinea verticalmente al centro */
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px; /* Espaciado entre los enlaces */
-    margin: 0; /* Sin margen */
-    padding: 0; /* Sin padding */
-    align-items: center; /* Alinea verticalmente al centro */
-}
-
-.navbar li {
-    display: inline; /* Asegura que los elementos de la lista se alineen en una línea */
-}
-
-.navbar a {
-    color: rgb(255, 255, 255); /* Color del enlace */
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px; /* Espaciado interno para los enlaces */
-    border-radius: 5px; /* Esquinas redondeadas */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para hover */
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 18px;
-    font-style: normal;
-}
-
-.navbar .nav-link:hover {
-    background-color: #092a1cff; /* Color de fondo al pasar el ratón */
-    color: white; /* Color del texto al pasar el ratón */
-}
-
-
 /*------------------------------------------------Iconos------------------------------------------------------*/
 
 .icon-custom {
@@ -96,7 +16,7 @@ header {
     transition: transform 0.3s, color 0.3s, background-color 0.3s; /* Suaviza la transición */
     color: #7fe679ff; /* Color normal de los íconos */
     border-radius: 50%; /* Hace que el fondo sea redondo */
-    padding: 10px; /* Espacio alrededor del ícono */
+    padding: 15px; /* Espacio alrededor del ícono */
     display: inline-block; /* Para que el fondo redondo funcione */
 }
 

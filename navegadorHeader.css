@@ -1,0 +1,59 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Navegador ocupa todo el ancho */
+    background-color: rgba(26, 126, 71, 0.2); /* Fondo semitransparente */
+    border-bottom: 1px solid #051107; /* Borde inferior */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque detrás del navegador */
+    -webkit-backdrop-filter: blur(10px); /* Soporte para navegadores WebKit */
+    z-index: 1000;
+    padding: 10px 0; /* Espaciado interno */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los lados */
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaciado entre los enlaces */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+.navbar li {
+    display: inline; /* Asegura que los elementos de la lista se alineen en una línea */
+}
+
+.link {
+    
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fefefe;
+    position: relative;
+    transition: color 0.25s;
+  }
+  .link:hover {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .link::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: #fefefe;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 10px;
+  }
+  .link:hover::after {
+    scale: 1 1;
+  }
