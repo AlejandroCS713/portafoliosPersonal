@@ -38,18 +38,159 @@
     color: rgb(36, 102, 156);
     transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el ratón */
     color: white; /* Cambia el color del ícono al pasar el ratón */
+    transition: 2s;
     background-color: rgba(52, 152, 219, 0.7); /* Fondo azul claro con opacidad */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efecto de sombra difusa */
     
 }
 .fa-github:hover{
     color: black;
+    transition: 2s;
     transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el ratón */
     color: white; /* Cambia el color del ícono al pasar el ratón */
     background-color: rgba(0, 0, 0, 0.7); /* Fondo azul claro con opacidad */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efecto de sombra difusa */
 }  
+
+.fa-linkedin::after{
+    scale: 1 1;
+    
+}
+.fa-github::after{
+    scale: 1 1;
+}  
+
+.iconosTecnologias{
+    font-size: 70px;
+    transition: transform 0.3s;
+}
+
+
+.fa-html5{
+    color: rgb(255, 102, 0);
+}  
+
+.fa-css3-alt{
+    color: blue;
+}  
+
+.fa-bootstrap{
+    color: purple;
+}  
+
+.fa-java{
+    color: orange;
+}  
+
+.fa-js{
+    color: yellow;
+}  
+
+.fa-php{
+    color: black;
+}  
+
+.fa-laravel{
+    color: red;
+}  
+
+.fa-git-alt{
+    color: orange;
+}  
+.fa-docker{
+    color: blue;
+}  
+
+.fa-database{
+    color: blue;
+}  
+.fa-angular{
+    color: red;
+}  
+.fa-android{
+    color: green;
+}  
+.fa-react{
+    color: rgb(0, 162, 255);
+}  
+
+.fa-html5:hover{
+    transform: scale(1.2);    
+    color: rgb(255, 102, 0);
+}  
+
+.fa-css3-alt:hover{
+    transform: scale(1.2);  
+    color: blue;
+}  
+
+.fa-bootstrap:hover{
+    transform: scale(1.2);  
+    color: purple;
+}  
+
+.fa-java:hover{
+    transform: scale(1.2);  
+    color: orange;
+}  
+
+.fa-js:hover{
+    transform: scale(1.2);  
+    color: yellow;
+}  
+
+.fa-php:hover{
+    transform: scale(1.2);  
+    color: black;
+}  
+
+.fa-laravel:hover{
+    transform: scale(1.2);  
+    color: red;
+}  
+
+.fa-git-alt:hover{
+    transform: scale(1.2);  
+    color: orange;
+}  
+.fa-docker:hover{
+    transform: scale(1.2);  
+    color: blue;
+}  
+
+.fa-database:hover{
+    transform: scale(1.2);  
+    color: blue;
+}  
+.fa-angular:hover{
+    transform: scale(1.2);  
+    color: red;
+}  
+.fa-android:hover{
+    transform: scale(1.2);  
+    color: green;
+}  
+.fa-react:hover{
+    transform: scale(1.2);  
+    color: rgb(0, 162, 255);
+}  
 /*------------------------------------------------Iconos------------------------------------------------------*/
+
+/*-------------------------------------Tecnologia---------------------------------------*/
+
+.tecnologiasArticle {
+    display: flex;
+    justify-content: center;       /* Centra los íconos horizontalmente */
+    align-items: center;           /* Centra los íconos verticalmente */
+    flex-wrap: wrap;               /* Permite que los íconos se ajusten a múltiples filas */
+    gap: 25px;                     /* Espacio entre cada ícono */
+    max-width: 400px;              /* Ancho máximo para limitar a 5 íconos por fila */
+    margin: 0 auto;                /* Centra el contenedor en la página */
+    padding: 20px;                 /* Añade un poco de espacio interno */
+    margin-top: 80px;
+}
+
+
 
 /*---------------------------------------------- Navegador----------------------------------------------------*/
 
@@ -70,7 +211,7 @@ footer {
 
 /*------------------------------------------------Fuentes-----------------------------------------------*/
 .tituloSobreMi{
-    padding-top: 30px;
+    padding-top: 100px;
     padding-left: 25px;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
