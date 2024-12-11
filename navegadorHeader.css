@@ -58,17 +58,22 @@ header {
     scale: 1 1;
   }
 
-  /* Para tablets y pantallas de hasta 768px */
+/* Para tablets y pantallas de hasta 768px */
 @media (max-width: 768px) {
+  header {
+      padding: 8px 0; /* Reducir el padding del header */
+  }
+
+  /* Ajuste de la barra de navegación */
   .navbar {
       flex-direction: column;  /* Apilar los elementos verticalmente */
       align-items: flex-start;  /* Alinear los elementos a la izquierda */
-      padding: 10px;  /* Reducir el padding */
+      padding: 8px 10px;  /* Reducir padding */
   }
 
   .navbar ul {
-      display: block;  /* Hacer que los elementos se apilen en lugar de estar en fila */
-      gap: 15px;  /* Espaciado entre los elementos */
+      display: block;  /* Apilar los elementos */
+      gap: 12px;  /* Reducir el espacio entre los elementos */
   }
 
   .navbar li {
@@ -76,28 +81,38 @@ header {
   }
 
   .link {
-      font-size: 16px;  /* Reducir el tamaño de la fuente */
-      padding: 0.25rem 0.5rem;  /* Reducir el padding para que se ajuste mejor */
+      font-size: 16px;  /* Reducir tamaño de fuente */
+      padding: 0.25rem 0.5rem;  /* Reducir padding */
+  }
+
+  /* Añadir margen superior al contenido para evitar que se tape con el header */
+  section {
+      padding-top: 120px;  /* Añadir margen superior para el contenido */
   }
 }
 
 /* Para pantallas más pequeñas (móviles) de hasta 480px */
 @media (max-width: 480px) {
   header {
-      padding: 8px 0;  /* Reducir el padding en pantallas muy pequeñas */
+      padding: 6px 0;  /* Reducir padding aún más */
   }
 
   .navbar {
-      padding: 10px 10px;  /* Reducir el padding para que encaje mejor */
+      padding: 6px 8px;  /* Ajustar padding */
   }
 
   .navbar ul {
       display: block;  /* Apilar los elementos */
-      gap: 10px;  /* Menos espacio entre los elementos */
+      gap: 8px;  /* Reducir espacio entre los elementos */
   }
 
   .link {
       font-size: 14px;  /* Reducir aún más el tamaño de la fuente */
       padding: 0.25rem 0.5rem;  /* Reducir el padding */
+  }
+
+  /* Ajustar el margen superior para el contenido */
+  section {
+      padding-top: 110px;  /* Asegurarse de que no se tape el contenido */
   }
 }

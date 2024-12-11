@@ -128,61 +128,58 @@ footer {
 }
 /*------------------------------------------------Fuentes-----------------------------------------------*/
 
+
 /* Para tablets y pantallas de hasta 768px */
 @media (max-width: 768px) {
-    header {
-        padding: 8px 0; /* Reducir el padding del header */
+    .tituloSobreMi,
+    .experienciaTitulo,
+    .proyectosTitulo,
+    .tituloTecnologias {
+        font-size: 50px; /* Reducir tamaño de los títulos */
     }
 
-    /* Ajuste de la barra de navegación */
-    .navbar {
-        flex-direction: column;  /* Apilar los elementos verticalmente */
-        align-items: flex-start;  /* Alinear los elementos a la izquierda */
-        padding: 8px 10px;  /* Reducir padding */
+    .tecnologiasArticle {
+        max-width: 90%;  /* Ampliar el artículo para pantallas medianas */
+        margin-top: 60px;
+        padding: 15px;
     }
 
-    .navbar ul {
-        display: block;  /* Apilar los elementos */
-        gap: 12px;  /* Reducir el espacio entre los elementos */
+    .enlace {
+        font-size: 30px; /* Reducir tamaño del texto de los enlaces */
+        padding: 8px;
     }
 
-    .navbar li {
-        display: block;  /* Apilar los elementos de la lista */
-    }
-
-    .link {
-        font-size: 16px;  /* Reducir tamaño de fuente */
-        padding: 0.25rem 0.5rem;  /* Reducir padding */
-    }
-
-    /* Añadir margen superior al contenido para evitar que se tape con el header */
-    section {
-        padding-top: 120px;  /* Añadir margen superior para el contenido */
+    footer {
+        padding: 15px;  /* Reducir el padding en pie de página */
     }
 }
 
 /* Para pantallas más pequeñas (móviles) de hasta 480px */
 @media (max-width: 480px) {
-    header {
-        padding: 6px 0;  /* Reducir padding aún más */
+    .tituloSobreMi,
+    .experienciaTitulo,
+    .proyectosTitulo,
+    .tituloTecnologias {
+        font-size: 40px;  /* Reducir aún más el tamaño de los títulos */
     }
 
-    .navbar {
-        padding: 6px 8px;  /* Ajustar padding */
+    .tecnologiasArticle {
+        max-width: 100%;  /* Ajustar para que ocupe el 100% en móviles */
+        margin-top: 40px;
+        padding: 10px;
     }
 
-    .navbar ul {
-        display: block;  /* Apilar los elementos */
-        gap: 8px;  /* Reducir espacio entre los elementos */
+    .enlace {
+        font-size: 25px; /* Reducir el tamaño de la fuente aún más */
+        padding: 6px;
     }
 
-    .link {
-        font-size: 14px;  /* Reducir aún más el tamaño de la fuente */
-        padding: 0.25rem 0.5rem;  /* Reducir el padding */
+    .presentacion,
+    .descripcionPropia {
+        font-size: 16px;  /* Ajustar las fuentes para móviles */
     }
 
-    /* Ajustar el margen superior para el contenido */
-    section {
-        padding-top: 110px;  /* Asegurarse de que no se tape el contenido */
+    footer {
+        padding: 10px; /* Reducir el padding en el pie de página */
     }
 }
