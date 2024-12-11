@@ -24,5 +24,25 @@ body {
     background-position: 0% 50%;
   }
 }
+/* Estilos para tabletas y pantallas medianas (max-width: 1024px) */
+@media (max-width: 1024px) {
+  body {
+    background-size: 150% 150%;  /* Ajustar el tamaño del fondo */
+  }
+}
 
+/* Estilos para dispositivos móviles (max-width: 768px) */
+@media (max-width: 768px) {
+  body {
+    background-size: 100% 100%;  /* Fondo más pequeño para pantallas pequeñas */
+  }
+}
+
+/* Estilos para pantallas de smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    background-size: 100% 100%;  /* Fondo sin animación en pantallas pequeñas */
+    background-attachment: scroll; /* Deshabilitar el "fixed" para mejor rendimiento en móviles */
+  }
+}
 /*# sourceMappingURL=_base.css.map */

@@ -127,3 +127,59 @@ footer {
     color:#0c191f ;
 }
 /*------------------------------------------------Fuentes-----------------------------------------------*/
+
+
+/* Para tablets y pantallas de hasta 768px */
+@media (max-width: 768px) {
+    .tituloSobreMi,
+    .experienciaTitulo,
+    .proyectosTitulo,
+    .tituloTecnologias {
+        font-size: 50px; /* Reducir tamaño de los títulos */
+    }
+
+    .tecnologiasArticle {
+        max-width: 90%;  /* Ampliar el artículo para pantallas medianas */
+        margin-top: 60px;
+        padding: 15px;
+    }
+
+    .enlace {
+        font-size: 30px; /* Reducir tamaño del texto de los enlaces */
+        padding: 8px;
+    }
+
+    footer {
+        padding: 15px;  /* Reducir el padding en pie de página */
+    }
+}
+
+/* Para pantallas más pequeñas (móviles) de hasta 480px */
+@media (max-width: 480px) {
+    .tituloSobreMi,
+    .experienciaTitulo,
+    .proyectosTitulo,
+    .tituloTecnologias {
+        font-size: 40px;  /* Reducir aún más el tamaño de los títulos */
+    }
+
+    .tecnologiasArticle {
+        max-width: 100%;  /* Ajustar para que ocupe el 100% en móviles */
+        margin-top: 40px;
+        padding: 10px;
+    }
+
+    .enlace {
+        font-size: 25px; /* Reducir el tamaño de la fuente aún más */
+        padding: 6px;
+    }
+
+    .presentacion,
+    .descripcionPropia {
+        font-size: 16px;  /* Ajustar las fuentes para móviles */
+    }
+
+    footer {
+        padding: 10px; /* Reducir el padding en el pie de página */
+    }
+}

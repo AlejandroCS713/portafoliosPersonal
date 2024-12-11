@@ -242,3 +242,88 @@
     text-shadow: 0px 0px 7px white, 0px 0px 10px white;
   }
 }
+
+
+@media (max-width: 1024px) {
+  /* Para pantallas medianas (tabletas), reducir el tamaño de la luna */
+  .moon {
+    width: 80px;
+    height: 80px;
+    margin-left: 40%;  /* Ajustar la posición */
+  }
+
+  /* Reducir el tamaño de las estrellas */
+  .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11, .s12, 
+  .s13, .s14, .s15, .s16, .s17, .s18, .s19, .s20, .s21, .s22, .s23, .s24, .s25 {
+    font-size: 20px;
+  }
+
+  /* Ajustar posiciones para pantallas medianas */
+  .s1 { top: 5%; left: 4%; }
+  .s2 { top: 10%; left: 14%; }
+  .s3 { top: 18%; left: 30%; }
+  .s4 { top: 25%; left: 12%; }
+  .s5 { top: 35%; left: 38%; }
+  .s6 { top: 15%; left: 60%; }
+  .s7 { top: 30%; left: 57%; }
+  .s8 { top: 35%; left: 80%; }
+  .s9 { top: 88%; left: 90%; }
+  .s10 { top: 5%; left: 96%; }
+  .s11 { top: 90%; left: 40%; }
+  .s12 { top: 38%; left: 64%; }
+  .s13 { top: 12%; left: 40%; }
+  .s14 { top: 60%; left: 70%; }
+  .s15 { top: 72%; left: 62%; }
+  .s16 { top: 50%; left: 50%; }
+  .s17 { top: 88%; left: 10%; }
+  .s18 { top: 75%; left: 20%; }
+  .s19 { top: 60%; left: 38%; }
+  .s20 { top: 58%; left: 8%; }
+  .s21 { top: 50%; left: 22%; }
+  .s22 { top: 55%; left: 93%; }
+  .s23 { top: 85%; left: 76%; }
+  .s24 { top: 62%; left: 80%; }
+  .s25 { top: 82%; left: 45%; }
+}
+
+@media (max-width: 768px) {
+  /* Para pantallas más pequeñas (móviles), reducir aún más el tamaño de la luna */
+  .moon {
+    width: 60px;
+    height: 60px;
+    margin-left: 35%;  /* Ajustar la posición */
+  }
+
+  /* Reducir el tamaño de las estrellas aún más */
+  .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11, .s12, 
+  .s13, .s14, .s15, .s16, .s17, .s18, .s19, .s20, .s21, .s22, .s23, .s24, .s25 {
+    font-size: 18px;
+  }
+
+  /* Ajustar posiciones para pantallas pequeñas */
+  .s1 { top: 8%; left: 6%; }
+  .s2 { top: 15%; left: 18%; }
+  .s3 { top: 22%; left: 35%; }
+  .s4 { top: 30%; left: 15%; }
+  .s5 { top: 40%; left: 42%; }
+  .s6 { top: 20%; left: 63%; }
+  .s7 { top: 33%; left: 60%; }
+  .s8 { top: 38%; left: 82%; }
+  .s9 { top: 88%; left: 92%; }
+  .s10 { top: 8%; left: 97%; }
+  .s11 { top: 90%; left: 45%; }
+  .s12 { top: 40%; left: 65%; }
+  .s13 { top: 15%; left: 42%; }
+  .s14 { top: 65%; left: 73%; }
+  .s15 { top: 75%; left: 65%; }
+  .s16 { top: 55%; left: 53%; }
+  .s17 { top: 88%; left: 15%; }
+  .s18 { top: 78%; left: 22%; }
+  .s19 { top: 63%; left: 40%; }
+  .s20 { top: 60%; left: 12%; }
+  .s21 { top: 53%; left: 25%; }
+  .s22 { top: 57%; left: 95%; }
+  .s23 { top: 87%; left: 78%; }
+  .s24 { top: 64%; left: 82%; }
+  .s25 { top: 84%; left: 47%; }
+}

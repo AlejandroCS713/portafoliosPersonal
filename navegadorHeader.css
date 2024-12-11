@@ -57,3 +57,47 @@ header {
   .link:hover::after {
     scale: 1 1;
   }
+
+  /* Para tablets y pantallas de hasta 768px */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;  /* Apilar los elementos verticalmente */
+      align-items: flex-start;  /* Alinear los elementos a la izquierda */
+      padding: 10px;  /* Reducir el padding */
+  }
+
+  .navbar ul {
+      display: block;  /* Hacer que los elementos se apilen en lugar de estar en fila */
+      gap: 15px;  /* Espaciado entre los elementos */
+  }
+
+  .navbar li {
+      display: block;  /* Apilar los elementos de la lista */
+  }
+
+  .link {
+      font-size: 16px;  /* Reducir el tamaño de la fuente */
+      padding: 0.25rem 0.5rem;  /* Reducir el padding para que se ajuste mejor */
+  }
+}
+
+/* Para pantallas más pequeñas (móviles) de hasta 480px */
+@media (max-width: 480px) {
+  header {
+      padding: 8px 0;  /* Reducir el padding en pantallas muy pequeñas */
+  }
+
+  .navbar {
+      padding: 10px 10px;  /* Reducir el padding para que encaje mejor */
+  }
+
+  .navbar ul {
+      display: block;  /* Apilar los elementos */
+      gap: 10px;  /* Menos espacio entre los elementos */
+  }
+
+  .link {
+      font-size: 14px;  /* Reducir aún más el tamaño de la fuente */
+      padding: 0.25rem 0.5rem;  /* Reducir el padding */
+  }
+}

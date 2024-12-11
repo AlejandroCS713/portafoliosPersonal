@@ -271,5 +271,46 @@
                  0 0 35px rgba(0, 162, 255, 0.5),
                  0 0 45px rgba(0, 162, 255, 0.4);
 }
+@media (max-width: 768px) {  /* Esto se aplica a pantallas de 768px o menos (tabletas y móviles) */
+    .icon-custom {
+        font-size: 24px;  /* Reduces el tamaño de los iconos */
+        padding: 10px;  /* Reducir el padding para un mejor ajuste */
+    }
+
+    .iconoPersonalizado {
+        height: 50px;  /* Reducir el tamaño del icono */
+        width: 50px;
+    }
+
+    .iconosTecnologias {
+        font-size: 50px;  /* Reducir el tamaño de los iconos de tecnologías */
+    }
+
+    .html5, .css3, .bootstrapC, .jsC, .angularC {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {  /* Esto se aplica a pantallas de 480px o menos (móviles más pequeños) */
+    .icon-custom {
+        font-size: 20px;  /* Asegura que los iconos sean pequeños en dispositivos más pequeños */
+        padding: 8px;
+    }
+
+    .iconoPersonalizado {
+        height: 40px;
+        width: 40px;
+    }
+
+    .iconosTecnologias {
+        font-size: 40px;  /* Reducir más el tamaño de los iconos de tecnologías */
+    }
+
+    .html5, .css3, .bootstrapC, .jsC, .angularC {
+        width: 50px;
+        height: 50px;
+    }
+}
 
 /*------------------------------------------------Iconos------------------------------------------------------*/
