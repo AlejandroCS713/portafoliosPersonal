@@ -50,6 +50,7 @@ footer {
     color:#0c191f ;
 }
 .experienciaTitulo{
+    margin-top: 50px;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-size: 68px;
@@ -59,6 +60,7 @@ footer {
 }
 
 .proyectosTitulo{
+    margin-top: 50px;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-size: 68px;
@@ -67,6 +69,14 @@ footer {
     color:#0c191f ;
 }
 
+.fechaTiempo{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    color:#0c191f ;
+}
 .enlace{
     padding: 10px;
     font-family: "Oswald", sans-serif;
@@ -87,18 +97,19 @@ footer {
     font-style: normal;
     font-weight: bold;
     border-radius: 50px;
-    background-color: rgba(26, 126, 71, 0.2);
     color:white ;
     transition: 2s ease;
 }
 
 .presentacion{
+    margin-top: 10px;
     font-family: "Anton SC", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #efb245;
 }
 .descripcionPropia{
+    margin-top: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 80;
     font-style: normal;
