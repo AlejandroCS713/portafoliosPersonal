@@ -85,7 +85,7 @@ footer {
     border-radius: 20px;
     font-style: normal;
     font-weight: bold;
-    color:#efb245 ;
+    color:#f3c87f ;
     transition: 2s ease;
 }
 
@@ -117,6 +117,7 @@ footer {
 }
 
 .tituloTecnologias{
+    margin-top: 50px;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
