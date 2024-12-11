@@ -128,58 +128,61 @@ footer {
 }
 /*------------------------------------------------Fuentes-----------------------------------------------*/
 
-
 /* Para tablets y pantallas de hasta 768px */
 @media (max-width: 768px) {
-    .tituloSobreMi,
-    .experienciaTitulo,
-    .proyectosTitulo,
-    .tituloTecnologias {
-        font-size: 50px; /* Reducir tamaño de los títulos */
+    header {
+        padding: 10px 0; /* Reducir el padding */
     }
 
-    .tecnologiasArticle {
-        max-width: 90%;  /* Ampliar el artículo para pantallas medianas */
-        margin-top: 60px;
-        padding: 15px;
+    /* Ajuste de la barra de navegación */
+    .navbar {
+        flex-direction: column;  /* Apilar los elementos verticalmente */
+        align-items: flex-start;  /* Alinear los elementos a la izquierda */
+        padding: 10px;
     }
 
-    .enlace {
-        font-size: 30px; /* Reducir tamaño del texto de los enlaces */
-        padding: 8px;
+    .navbar ul {
+        display: block;  /* Apilar los elementos */
+        gap: 15px;  /* Reducir el espacio entre elementos */
     }
 
-    footer {
-        padding: 15px;  /* Reducir el padding en pie de página */
+    .navbar li {
+        display: block;  /* Apilar los elementos de la lista */
+    }
+
+    .link {
+        font-size: 16px;  /* Reducir tamaño de fuente */
+        padding: 0.25rem 0.5rem;  /* Reducir padding */
+    }
+
+    /* Añadir margen superior al contenido para evitar que se tape con el header */
+    section {
+        padding-top: 120px;  /* Este valor puede necesitar ajuste según la altura de tu header */
     }
 }
 
 /* Para pantallas más pequeñas (móviles) de hasta 480px */
 @media (max-width: 480px) {
-    .tituloSobreMi,
-    .experienciaTitulo,
-    .proyectosTitulo,
-    .tituloTecnologias {
-        font-size: 40px;  /* Reducir aún más el tamaño de los títulos */
+    header {
+        padding: 8px 0;  /* Reducir padding aún más */
     }
 
-    .tecnologiasArticle {
-        max-width: 100%;  /* Ajustar para que ocupe el 100% en móviles */
-        margin-top: 40px;
-        padding: 10px;
+    .navbar {
+        padding: 10px 10px;  /* Ajustar padding */
     }
 
-    .enlace {
-        font-size: 25px; /* Reducir el tamaño de la fuente aún más */
-        padding: 6px;
+    .navbar ul {
+        display: block;  /* Apilar los elementos */
+        gap: 10px;  /* Reducir espacio entre los elementos */
     }
 
-    .presentacion,
-    .descripcionPropia {
-        font-size: 16px;  /* Ajustar las fuentes para móviles */
+    .link {
+        font-size: 14px;  /* Reducir aún más el tamaño de la fuente */
+        padding: 0.25rem 0.5rem;  /* Reducir el padding */
     }
 
-    footer {
-        padding: 10px; /* Reducir el padding en el pie de página */
+    /* Ajustar el margen superior para el contenido */
+    section {
+        padding-top: 100px;  /* Asegurarse de que no se tape el contenido */
     }
 }
