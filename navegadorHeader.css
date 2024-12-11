@@ -1,79 +1,83 @@
+/* Estilos generales */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    background-color: rgba(26, 126, 71, 0.2);
-    border-bottom: 1px solid #051107; 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px);
-    z-index: 1000;
-    padding: 10px 0; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  background-color: rgba(26, 126, 71, 0.2);
+  border-bottom: 1px solid #051107; 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 10px 0; /* Padding inicial para desktop */
 }
+
+/* Estilo de la barra de navegación */
 .navbar {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px; 
-    margin: 0;
-    padding: 0;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 20px; 
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
 .navbar li {
-    display: inline; 
+  display: inline; 
 }
 
 .link {
-    
-    text-decoration: none;
-    padding: 0.5rem 0.75rem;
-    font-size: 18px;
-    font-weight: 600;
-    color: #fefefe;
-    position: relative;
-    transition: color 0.25s;
-  }
-  .link:hover {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .link::after {
-    position: absolute;
-    content: "";
-    inset: 0;
-    background-color: #fefefe;
-    scale: 1 0;
-    z-index: -1;
-    transition: 0.45s;
-    border-radius: 10px;
-  }
-  .link:hover::after {
-    scale: 1 1;
-  }
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fefefe;
+  position: relative;
+  transition: color 0.25s;
+}
+
+.link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.link::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #fefefe;
+  scale: 1 0;
+  z-index: -1;
+  transition: 0.45s;
+  border-radius: 10px;
+}
+
+.link:hover::after {
+  scale: 1 1;
+}
 
 /* Para tablets y pantallas de hasta 768px */
 @media (max-width: 768px) {
   header {
-      padding: 8px 0; /* Reducir el padding del header */
+      padding: 8px 0; /* Reducir padding del header */
   }
 
   /* Ajuste de la barra de navegación */
   .navbar {
       flex-direction: column;  /* Apilar los elementos verticalmente */
       align-items: flex-start;  /* Alinear los elementos a la izquierda */
-      padding: 8px 10px;  /* Reducir padding */
+      padding: 6px 10px;  /* Reducir padding */
   }
 
   .navbar ul {
       display: block;  /* Apilar los elementos */
-      gap: 12px;  /* Reducir el espacio entre los elementos */
+      gap: 12px;  /* Reducir el espacio entre elementos */
   }
 
   .navbar li {
@@ -87,18 +91,18 @@ header {
 
   /* Añadir margen superior al contenido para evitar que se tape con el header */
   section {
-      padding-top: 120px;  /* Añadir margen superior para el contenido */
+      padding-top: 130px;  /* Añadir margen superior para el contenido */
   }
 }
 
 /* Para pantallas más pequeñas (móviles) de hasta 480px */
 @media (max-width: 480px) {
   header {
-      padding: 6px 0;  /* Reducir padding aún más */
+      padding: 6px 0;  /* Reducir aún más el padding */
   }
 
   .navbar {
-      padding: 6px 8px;  /* Ajustar padding */
+      padding: 4px 8px;  /* Ajustar aún más el padding */
   }
 
   .navbar ul {
@@ -113,6 +117,6 @@ header {
 
   /* Ajustar el margen superior para el contenido */
   section {
-      padding-top: 110px;  /* Asegurarse de que no se tape el contenido */
+      padding-top: 140px;  /* Asegurarse de que no se tape el contenido */
   }
 }
